@@ -1,18 +1,36 @@
 # Bogos Tinted 👽
 
-A mod for The Binding of Isaac: Repentance+ that plays the "Bogos Binted" meme audio when a tinted rock or super special tinted rock is destroyed.
+A mod for **The Binding of Isaac: Repentance+** that plays the "Bogos Binted?" meme audio clip whenever a tinted rock or super special tinted rock is destroyed.
 
-## Function
+## Installation
 
-This mod utilizes the official Binding of Isaac Lua API:
+1. Subscribe to the mod on the [Steam Workshop](#), or manually copy the repo contents into:
+   ```
+   steamapps\common\The Binding of Isaac Rebirth\mods\bogos_tinted
+   ```
+2. Launch the game and enable **Bogos Tinted** from the Mods menu.
 
-1. **Room Scanning (`MC_POST_NEW_ROOM`)**:
-   Upon entering any room, `scanRoomForTintedRocks()` scans all grid entities in the room and registers the grid index of any tinted rock or super special tinted rock into a tracking table.
+## How It Works
 
-2. **Destruction Checking (`MC_POST_UPDATE`)**:
-   On every frame update, tracked grid indices are evaluated:
-   - If the grid entity is removed (`nil`), replaced, or its state changes to destroyed (`state == 2`), the mod triggers `SFXManager():Play(...)` with the `"Bogos Binted"` sound ID.
-   - The destroyed grid index is immediately removed from the tracking list so the sound only plays once.
+The mod hooks into two game callbacks via the Isaac Lua API:
+
+| Callback | Purpose |
+|---|---|
+| `MC_POST_NEW_ROOM` | Scans all grid entities in the new room and records the indices of any tinted rocks (`GRID_ROCKT`) and super special tinted rocks (`GRID_ROCK_SS`). |
+| `MC_POST_UPDATE` | Checks every tracked index each frame. When a rock is gone (`nil`) or its state is `2` (destroyed), the "Bogos Binted?" audio plays once via `SFXManager():Play(...)`, and the index is removed from tracking. |
+
+## Project Structure
+
+```
+bogos-tinted/
+├── main.lua              # Core mod logic
+├── metadata.xml          # Mod metadata (name, version, visibility)
+├── content/
+│   └── sounds.xml        # Sound entry definition
+└── resources/
+    └── sfx/
+        └── bogos_binted.wav  # Bogos Binted audio clip
+```
 
 ## License
 
