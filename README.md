@@ -1,12 +1,12 @@
 # Bogos Tinted 👽
-<img width="1024" height="768" alt="BogosBinted" src="https://github.com/user-attachments/assets/85bbd22b-dfc9-4a75-91f7-e8042cb2f125" />
 
+<img width="1024" height="768" alt="BogosBinted" src="https://github.com/user-attachments/assets/85bbd22b-dfc9-4a75-91f7-e8042cb2f125" />
 
 A mod for **The Binding of Isaac: Repentance+** that plays the "Bogos Binted?" meme audio clip whenever a tinted rock or super special tinted rock is destroyed.
 
 ## Installation
 
-1. Subscribe to the mod on the [Steam Workshop](#), or manually copy the repo contents into:
+1. Subscribe to the mod on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3782444375), or extract the contents of the release into:
    ```
    steamapps\common\The Binding of Isaac Rebirth\mods\bogos_tinted
    ```
