@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <name>Bogos Tinted</name>
+    <directory>bogos-tinted</directory>
+    <description>Plays 'bogos_binted.wav' whenever a tinted rock or super tinted rock is destroyed.</description>
+    <version>1.0</version>
+    <visibility>Public</visibility>
+</metadata>
