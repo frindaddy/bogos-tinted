@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
     <name>Bogos Tinted</name>
     <directory>bogos-tinted</directory>
-    <description>Plays the "Bogos Binted" meme audio whenever a tinted rock or super special tinted rock is destroyed.</description>
+    <id>3782444375</id>
+    <description>Plays the &quot;bogos binted&quot; meme audio whenever a tinted rock or super special tinted rock is destroyed.
+
+Git repo here: https://github.com/frindaddy/bogos-tinted</description>
     <version>1.0</version>
     <visibility>Public</visibility>
+    <tag id="Sound Effects"/>
 </metadata>
