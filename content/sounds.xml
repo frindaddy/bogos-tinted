@@ -1,5 +1,5 @@
 <sounds root="sfx/">
-    <sound name="Bogos Binted">
+    <sound name="bogos_binted">
         <sample weight="1" path="bogos_binted.wav" />
     </sound>
 </sounds>
