@@ -6,7 +6,7 @@
     <description>Plays the &quot;bogos binted&quot; meme audio whenever a tinted rock or super special tinted rock is destroyed.
 
 Git repo here: https://github.com/frindaddy/bogos-tinted</description>
-    <version>1.0</version>
+    <version>1.1</version>
     <visibility>Public</visibility>
     <tag id="Sound Effects"/>
 </metadata>
